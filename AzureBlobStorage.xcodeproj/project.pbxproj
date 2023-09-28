@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B537FA72AC2E51D00B7DA9D /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 1B537FA62AC2E51D00B7DA9D /* XMLCoder */; };
+		1B537FAA2AC2ED7300B7DA9D /* XMLDecoder+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B537FA92AC2ED7300B7DA9D /* XMLDecoder+KeyPath.swift */; };
+		1BDB8B6B2ABDC29A00D64DC5 /* AzureBlobStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDB8B622ABDC29A00D64DC5 /* AzureBlobStorage.framework */; };
+		1BDB8B702ABDC29A00D64DC5 /* AzureBlobStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8B6F2ABDC29A00D64DC5 /* AzureBlobStorageTests.swift */; };
+		1BDB8B712ABDC29A00D64DC5 /* AzureBlobStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDB8B652ABDC29A00D64DC5 /* AzureBlobStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BDB8B7C2ABDC41400D64DC5 /* AZCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8B7B2ABDC41400D64DC5 /* AZCredentials.swift */; };
+		1BDB8B7F2ABDC67000D64DC5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1BDB8B7E2ABDC67000D64DC5 /* Alamofire */; };
+		1BDB8B812ABDC69D00D64DC5 /* AZBlobClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8B802ABDC69D00D64DC5 /* AZBlobClient.swift */; };
+		1BDB8B832ABDC74C00D64DC5 /* AZNetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8B822ABDC74C00D64DC5 /* AZNetworkingProtocol.swift */; };
+		1BDB8B882ABDCA3500D64DC5 /* AZBlobClient+Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8B872ABDCA3500D64DC5 /* AZBlobClient+Endpoints.swift */; };
+		1BDB8B8A2ABDCEA500D64DC5 /* AZBlobClient+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB8B892ABDCEA500D64DC5 /* AZBlobClient+Errors.swift */; };
+		1BE173F52AC45DF500F59E99 /* BlockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE173F42AC45DF500F59E99 /* BlockList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BDB8B6C2ABDC29A00D64DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BDB8B592ABDC29900D64DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BDB8B612ABDC29A00D64DC5;
+			remoteInfo = AzureBlobStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B537FA92AC2ED7300B7DA9D /* XMLDecoder+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMLDecoder+KeyPath.swift"; sourceTree = "<group>"; };
+		1BDB8B622ABDC29A00D64DC5 /* AzureBlobStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureBlobStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDB8B652ABDC29A00D64DC5 /* AzureBlobStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzureBlobStorage.h; sourceTree = "<group>"; };
+		1BDB8B6A2ABDC29A00D64DC5 /* AzureBlobStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzureBlobStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDB8B6F2ABDC29A00D64DC5 /* AzureBlobStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureBlobStorageTests.swift; sourceTree = "<group>"; };
+		1BDB8B7B2ABDC41400D64DC5 /* AZCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZCredentials.swift; sourceTree = "<group>"; };
+		1BDB8B802ABDC69D00D64DC5 /* AZBlobClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZBlobClient.swift; sourceTree = "<group>"; };
+		1BDB8B822ABDC74C00D64DC5 /* AZNetworkingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZNetworkingProtocol.swift; sourceTree = "<group>"; };
+		1BDB8B872ABDCA3500D64DC5 /* AZBlobClient+Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZBlobClient+Endpoints.swift"; sourceTree = "<group>"; };
+		1BDB8B892ABDCEA500D64DC5 /* AZBlobClient+Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AZBlobClient+Errors.swift"; sourceTree = "<group>"; };
+		1BE173F42AC45DF500F59E99 /* BlockList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BDB8B5F2ABDC29A00D64DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B537FA72AC2E51D00B7DA9D /* XMLCoder in Frameworks */,
+				1BDB8B7F2ABDC67000D64DC5 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDB8B672ABDC29A00D64DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDB8B6B2ABDC29A00D64DC5 /* AzureBlobStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BDB8B582ABDC29900D64DC5 = {
+			isa = PBXGroup;
+			children = (
+				1BDB8B642ABDC29A00D64DC5 /* AzureBlobStorage */,
+				1BDB8B6E2ABDC29A00D64DC5 /* AzureBlobStorageTests */,
+				1BDB8B632ABDC29A00D64DC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BDB8B632ABDC29A00D64DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BDB8B622ABDC29A00D64DC5 /* AzureBlobStorage.framework */,
+				1BDB8B6A2ABDC29A00D64DC5 /* AzureBlobStorageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BDB8B642ABDC29A00D64DC5 /* AzureBlobStorage */ = {
+			isa = PBXGroup;
+			children = (
+				1BE173F32AC45DD400F59E99 /* Models */,
+				1BDB8B7A2ABDC39F00D64DC5 /* Networking */,
+				1BDB8B652ABDC29A00D64DC5 /* AzureBlobStorage.h */,
+				1BDB8B7B2ABDC41400D64DC5 /* AZCredentials.swift */,
+			);
+			path = AzureBlobStorage;
+			sourceTree = "<group>";
+		};
+		1BDB8B6E2ABDC29A00D64DC5 /* AzureBlobStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BDB8B6F2ABDC29A00D64DC5 /* AzureBlobStorageTests.swift */,
+			);
+			path = AzureBlobStorageTests;
+			sourceTree = "<group>";
+		};
+		1BDB8B7A2ABDC39F00D64DC5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1BDB8B802ABDC69D00D64DC5 /* AZBlobClient.swift */,
+				1BDB8B872ABDCA3500D64DC5 /* AZBlobClient+Endpoints.swift */,
+				1BDB8B892ABDCEA500D64DC5 /* AZBlobClient+Errors.swift */,
+				1BDB8B822ABDC74C00D64DC5 /* AZNetworkingProtocol.swift */,
+				1B537FA92AC2ED7300B7DA9D /* XMLDecoder+KeyPath.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1BE173F32AC45DD400F59E99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BE173F42AC45DF500F59E99 /* BlockList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BDB8B5D2ABDC29A00D64DC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDB8B712ABDC29A00D64DC5 /* AzureBlobStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BDB8B612ABDC29A00D64DC5 /* AzureBlobStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDB8B742ABDC29A00D64DC5 /* Build configuration list for PBXNativeTarget "AzureBlobStorage" */;
+			buildPhases = (
+				1BDB8B5D2ABDC29A00D64DC5 /* Headers */,
+				1B5CEBDD2AC1B73400FFF26D /* Swiftlint */,
+				1BDB8B5E2ABDC29A00D64DC5 /* Sources */,
+				1BDB8B5F2ABDC29A00D64DC5 /* Frameworks */,
+				1BDB8B602ABDC29A00D64DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzureBlobStorage;
+			packageProductDependencies = (
+				1BDB8B7E2ABDC67000D64DC5 /* Alamofire */,
+				1B537FA62AC2E51D00B7DA9D /* XMLCoder */,
+			);
+			productName = AzureBlobStorage;
+			productReference = 1BDB8B622ABDC29A00D64DC5 /* AzureBlobStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BDB8B692ABDC29A00D64DC5 /* AzureBlobStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDB8B772ABDC29A00D64DC5 /* Build configuration list for PBXNativeTarget "AzureBlobStorageTests" */;
+			buildPhases = (
+				1BDB8B662ABDC29A00D64DC5 /* Sources */,
+				1BDB8B672ABDC29A00D64DC5 /* Frameworks */,
+				1BDB8B682ABDC29A00D64DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BDB8B6D2ABDC29A00D64DC5 /* PBXTargetDependency */,
+			);
+			name = AzureBlobStorageTests;
+			productName = AzureBlobStorageTests;
+			productReference = 1BDB8B6A2ABDC29A00D64DC5 /* AzureBlobStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BDB8B592ABDC29900D64DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1BDB8B612ABDC29A00D64DC5 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					1BDB8B692ABDC29A00D64DC5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1BDB8B5C2ABDC29900D64DC5 /* Build configuration list for PBXProject "AzureBlobStorage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BDB8B582ABDC29900D64DC5;
+			packageReferences = (
+				1BDB8B7D2ABDC67000D64DC5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1B537FA52AC2E51D00B7DA9D /* XCRemoteSwiftPackageReference "XMLCoder" */,
+			);
+			productRefGroup = 1BDB8B632ABDC29A00D64DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BDB8B612ABDC29A00D64DC5 /* AzureBlobStorage */,
+				1BDB8B692ABDC29A00D64DC5 /* AzureBlobStorageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BDB8B602ABDC29A00D64DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDB8B682ABDC29A00D64DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B5CEBDD2AC1B73400FFF26D /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n   export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n   swiftlint\nelse\n   echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BDB8B5E2ABDC29A00D64DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDB8B882ABDCA3500D64DC5 /* AZBlobClient+Endpoints.swift in Sources */,
+				1BE173F52AC45DF500F59E99 /* BlockList.swift in Sources */,
+				1BDB8B832ABDC74C00D64DC5 /* AZNetworkingProtocol.swift in Sources */,
+				1BDB8B7C2ABDC41400D64DC5 /* AZCredentials.swift in Sources */,
+				1BDB8B812ABDC69D00D64DC5 /* AZBlobClient.swift in Sources */,
+				1BDB8B8A2ABDCEA500D64DC5 /* AZBlobClient+Errors.swift in Sources */,
+				1B537FAA2AC2ED7300B7DA9D /* XMLDecoder+KeyPath.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BDB8B662ABDC29A00D64DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDB8B702ABDC29A00D64DC5 /* AzureBlobStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BDB8B6D2ABDC29A00D64DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BDB8B612ABDC29A00D64DC5 /* AzureBlobStorage */;
+			targetProxy = 1BDB8B6C2ABDC29A00D64DC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BDB8B722ABDC29A00D64DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BDB8B732ABDC29A00D64DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BDB8B752ABDC29A00D64DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ionutac.AzureBlobStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BDB8B762ABDC29A00D64DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ionutac.AzureBlobStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BDB8B782ABDC29A00D64DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ionutac.AzureBlobStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BDB8B792ABDC29A00D64DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ionutac.AzureBlobStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BDB8B5C2ABDC29900D64DC5 /* Build configuration list for PBXProject "AzureBlobStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDB8B722ABDC29A00D64DC5 /* Debug */,
+				1BDB8B732ABDC29A00D64DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDB8B742ABDC29A00D64DC5 /* Build configuration list for PBXNativeTarget "AzureBlobStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDB8B752ABDC29A00D64DC5 /* Debug */,
+				1BDB8B762ABDC29A00D64DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDB8B772ABDC29A00D64DC5 /* Build configuration list for PBXNativeTarget "AzureBlobStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDB8B782ABDC29A00D64DC5 /* Debug */,
+				1BDB8B792ABDC29A00D64DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B537FA52AC2E51D00B7DA9D /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/XMLCoder.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.17.1;
+			};
+		};
+		1BDB8B7D2ABDC67000D64DC5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B537FA62AC2E51D00B7DA9D /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B537FA52AC2E51D00B7DA9D /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
+		};
+		1BDB8B7E2ABDC67000D64DC5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BDB8B7D2ABDC67000D64DC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1BDB8B592ABDC29900D64DC5 /* Project object */;
+}
